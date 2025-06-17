@@ -25,7 +25,7 @@ exports.signInSchema = Joi.object({
     password: Joi.string()
     .required()
    .pattern(
-    new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$")
+    new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&#])[A-Za-z\\d@$!%*?&#]{8,}$")
     )
     .message("Password must be at least 8 characters long, contain one uppercase letter, one lowercase letter, one number, and one special character")
 })

@@ -22,7 +22,9 @@ const connectDb = async()=>{
         console.log("database connected");
     }
     catch(err){
+
         console.error(err);
+
     }
 }
 connectDb();

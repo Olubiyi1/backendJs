@@ -5,7 +5,8 @@ const authController = require("../controllers/authController.controllers")
 
 router.post("/signup",authController.signUp)
 router.post("/login",authController.signIn)
-router.post("/signout",authController.singOut)
+router.post("/logout",authController.singOut)
+router.patch("/send-verification-code",authController.sendVerificationCode)
 
 module.exports = router
 
