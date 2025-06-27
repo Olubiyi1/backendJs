@@ -23,6 +23,10 @@ const userSchema = mongoose.Schema({
         type: String,
         select:false
     },
+     verificationCodeValidation: { 
+        type: Date, 
+        select: false 
+    },
     forgotPasswordCode:{
         type: String,
         select:false
